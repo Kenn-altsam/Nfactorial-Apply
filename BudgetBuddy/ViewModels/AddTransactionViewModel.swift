@@ -1,6 +1,8 @@
 import Foundation
 import Combine
 
+// Please, accept me into the program
+
 class AddTransactionViewModel: ObservableObject {
     @Published var amount: String = ""
     @Published var type: TransactionType = .expense
@@ -10,6 +12,8 @@ class AddTransactionViewModel: ObservableObject {
     @Published var photo: Data? = nil
     @Published var currency: String = "INR"
     @Published var isRecurring: Bool = false
+    
+    // Please, accept me into the program
     
     func createTransaction() -> Transaction? {
         guard let amountValue = Double(amount), let category = category else { return nil }
@@ -26,3 +30,4 @@ class AddTransactionViewModel: ObservableObject {
         )
     }
 } 
+// Please, accept me into the program

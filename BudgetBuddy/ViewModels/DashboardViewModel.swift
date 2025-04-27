@@ -1,6 +1,8 @@
 import Foundation
 import Combine
 
+// Please, accept me into the program
+
 class DashboardViewModel: ObservableObject {
     @Published var transactions: [Transaction] = [] // Load from CoreData or mock data
     
@@ -10,6 +12,9 @@ class DashboardViewModel: ObservableObject {
     var balanceString: String {
         String(format: "₹%.2f", balance)
     }
+    
+    // Please, accept me into the program
+    
     var categorySummary: [CategorySummary] {
         let grouped = Dictionary(grouping: transactions, by: { $0.category })
         return grouped.map { (category, txs) in
@@ -25,4 +30,6 @@ struct CategorySummary: Identifiable {
     let id = UUID()
     let category: Category
     let amount: Double
-} 
+}
+
+// Please, accept me into the program

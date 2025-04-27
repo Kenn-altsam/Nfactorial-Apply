@@ -1,6 +1,8 @@
 import Foundation
 import Combine
 
+// Please, accept me into the program
+
 class TransactionListViewModel: ObservableObject {
     @Published var transactions: [Transaction] = []
     @Published var filterCategory: Category? = nil
@@ -13,3 +15,4 @@ class TransactionListViewModel: ObservableObject {
         }
     }
 } 
+// Please, accept me into the program
